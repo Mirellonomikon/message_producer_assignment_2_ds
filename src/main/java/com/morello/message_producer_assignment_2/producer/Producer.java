@@ -54,7 +54,7 @@ public class Producer {
                     });
             channel.basicPublish("", queue_name, null, message.getBytes());
             System.out.println("Sent '" + message + "'");
-            Thread.sleep(10000);
+            Thread.sleep(2000);
 
         }
     }
