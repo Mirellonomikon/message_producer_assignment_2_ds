@@ -33,7 +33,7 @@ public class Producer {
     @Bean
     public void messageProducer() throws URISyntaxException, NoSuchAlgorithmException, KeyManagementException, IOException, TimeoutException, CsvException, InterruptedException {
         ConnectionFactory connectionFactory = new ConnectionFactory();
-        connectionFactory.setUri("amqps://egsbshkj:NjCKxQzILzeK8TWRtK1rZpsCf4nq4Ndp@goose.rmq2.cloudamqp.com/egsbshkj");
+        connectionFactory.setUri("amqps://egsbshkj:NjCKxQnq4Ndp@goose.rmq2.cloudamqp.com/ekj");
         Connection connection = connectionFactory.newConnection();
         Channel channel = connection.createChannel();
         channel.queueDeclare(queue_name, false, false, false, null);
